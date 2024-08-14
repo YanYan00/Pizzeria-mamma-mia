@@ -15,8 +15,8 @@ function App() {
     <div className='cont'>
       <Navbar></Navbar>
       {/*<Home></Home>*/}
-      <RegisterPage></RegisterPage>
-      {/*<LoginPage></LoginPage>*/}
+      {/*<RegisterPage></RegisterPage>*/}
+      <LoginPage></LoginPage>
       <Footer></Footer>
     </div>
   )

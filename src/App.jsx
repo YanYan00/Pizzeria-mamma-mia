@@ -5,6 +5,8 @@ import './App.css'
 import Navbar from './componentes/Navbar/Navbar'
 import Home from './componentes/Home/Home'
 import Footer from './componentes/Footer/Footer'
+import RegisterPage from './componentes/RegisterPage/RegisterPage'
+import LoginPage from './componentes/LoginPage/LoginPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +14,9 @@ function App() {
   return (
     <div className='cont'>
       <Navbar></Navbar>
-      <Home></Home>
+      {/*<Home></Home>*/}
+      <RegisterPage></RegisterPage>
+      {/*<LoginPage></LoginPage>*/}
       <Footer></Footer>
     </div>
   )

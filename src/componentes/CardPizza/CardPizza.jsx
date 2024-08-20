@@ -3,16 +3,21 @@ import './CardPizza.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 
-const CardPizza = ({imagen,tipo_pizza,ingredientes,precio}) => {
+const CardPizza = ({pizza}) => {
   return (
     <>
       <div className='cardPizza'>
-        <img src={imagen} alt="imagen de pizza"/>
-        <h5>Pizza {tipo_pizza}</h5>
+        <img src={pizza.img} alt="imagen de pizza"/>
+        <p id='descripcion'>{pizza.desc}</p>
+        <h5>Pizza {pizza.name}</h5>
         <div className='info-pizza'>
           <h6>Ingredientes:</h6>
-          <p>🍕 {ingredientes}</p>
-          <h3>Precio: ${precio.toLocaleString()}</h3>
+          <ul>
+            {pizza.ingredients.map((ingredient) => (
+              <li className='ingrediente'>{ingredient}</li>
+            ))}
+          </ul>
+          <h3>Precio: ${pizza.price.toLocaleString()}</h3>
           <div className='botones'>
             <Button id='boton1'>Ver Más 👀</Button>
             <Button id='boton2'>Añadir 🛒</Button>

@@ -40,7 +40,14 @@
     gap: 50px;
     margin-bottom: 20px;
 }
-
+.ingrediente{
+    text-align: start;
+}
+#descripcion{
+    text-align: start;
+    height: 200px;
+    padding:20px;
+}
 #boton1{
     background-color: white;
     border: 1px solid black;

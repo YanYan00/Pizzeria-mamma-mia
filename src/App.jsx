@@ -5,7 +5,8 @@ import './App.css'
 import Navbar from './componentes/Navbar/Navbar'
 import Footer from './componentes/Footer/Footer'
 import CartPizza from './componentes/CartPizza/CartPizza'
-//import Home from './componentes/Home/Home'
+import Home from './componentes/Home/Home'
+import Pizza from './componentes/Pizza/Pizza'
 //import RegisterPage from './componentes/RegisterPage/RegisterPage'
 //import LoginPage from './componentes/LoginPage/LoginPage'
 
@@ -16,7 +17,8 @@ function App() {
       {/*<Home></Home>*/}
       {/*<RegisterPage></RegisterPage>*/}
       {/*<LoginPage></LoginPage>*/}
-      <CartPizza></CartPizza>
+      {/*<CartPizza></CartPizza>*/}
+      <Pizza></Pizza>
       <Footer></Footer>
     </div>
   )

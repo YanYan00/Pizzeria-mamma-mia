@@ -13,8 +13,8 @@ const CardPizza = ({pizza}) => {
         <div className='info-pizza'>
           <h6>Ingredientes:</h6>
           <ul>
-            {pizza.ingredients.map((ingredient) => (
-              <li className='ingrediente'>{ingredient}</li>
+            {pizza.ingredients.map((ingredient, index) => (
+              <li key={index} className='ingrediente'>{ingredient}</li>
             ))}
           </ul>
           <h3>Precio: ${pizza.price.toLocaleString()}</h3>
